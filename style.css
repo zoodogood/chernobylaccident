@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap');
+*{
+    margin: 0;
+    color: #94979e;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.55vh;
+    -webkit-touch-callout: none;
+    user-select: none;
+}
+
+a:hover {
+  color: #adb0b9;
+}
+
+body{
+  padding-top: 20vh;
+  padding-left: 10vh;
+  display: flex;
+  background: #060a1f url("https://static.dw.com/image/16342879_303.jpg") no-repeat right/auto 170vh;
+  overflow: hidden;
+  animation: swithbackground 30s 2s infinite alternate;
+  height: 100vh;
+}
+
+/* @keyframes swithbackground {
+  Тут мог быть анимированный фон
+} */
+
+#gradientShadow {
+  top: 0px;
+  left: 0px;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(6, 10, 31, 1) 20%, rgba(6, 10, 31, 0));
+}
+
+
+main {
+  z-index: 2;
+}
+#mainParagraph {
+  font-size: 2vh;
+  color: #a7a9ae;
+}
+
+p {
+  padding-top: 1vh;
+  font-weight: bold;
+  font-size: 1.75vh;
+}
+
+section p {
+  transition: color 0.9s;
+  cursor: pointer;
+}
+
+section:focus p {
+  color: #a7a9ae;
+}
+
+
+section div {
+  width: 50vh;
+  max-height: 0;
+  transition: max-height 0.9s ease-out;
+  overflow: hidden;
+}
+
+
+
+section:focus div {
+  max-height: 1000px;
+  transition: max-height 0.9s ease-in;
+}
