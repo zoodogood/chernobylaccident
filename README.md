@@ -1,4 +1,4 @@
-# chernobylaccident
+# chernobyl Accident
 https://zoodogood.github.io/chernobylaccident/
 
 <details>
